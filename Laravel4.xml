@@ -1,0 +1,5 @@
+<templateSet group="Laravel4">
+  <template name="Laravel4 Live Templates" value="Created by laravel-china.org" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
+</templateSet>
