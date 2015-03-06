@@ -9,7 +9,7 @@ First, find your configuration folder.
 	Linux: ~\.WebIde<version>\config
 	MacOS: ~/Library/Preferences/WebIde<version>
 
-On my MacOS, it would be `~/.WebIde80/config` so you have to adjust commands to your platform. There is a `templates/` directory. It contains XML files with Live Templates.
+On my MacOS, it would be `~/Library/Preferences/WebIde80` so you have to adjust commands to your platform. There is a `templates/` directory. It contains XML files with Live Templates.
 
 Create a git repository in the `templates/` dir and pull the templates
 ```bash
