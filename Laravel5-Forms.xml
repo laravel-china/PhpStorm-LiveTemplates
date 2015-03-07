@@ -1,0 +1,70 @@
+<templateSet group="Laravel5-Forms">
+  <template name="fo" value="{!! Form::open() !!}" description="Form open tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="false" />
+      <option name="PHP String Literal" value="false" />
+    </context>
+  </template>
+  <template name="fc" value="{!! Form::close() !!}" description="Form close tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="textfield" value="&lt;!--- $VALUE$ Field ---&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {!! Form::label('$NAME$', '$VALUE$:') !!}&#10;    {!! Form::text('$NAME$', null, ['class' =&gt; 'form-control']) !!}&#10;&lt;/div&gt;" description="Text form field" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="emailfield" value="&lt;!--- $VALUE$ Field ---&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {!! Form::label('$NAME$', '$VALUE$:') !!}&#10;    {!! Form::email('$NAME$', null, ['class' =&gt; 'form-control']) !!}&#10;&lt;/div&gt;" description="Email form field" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="passwordfield" value="&lt;!--- $VALUE$ Field ---&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {!! Form::label('$NAME$', '$VALUE$:') !!}&#10;    {!! Form::password('$NAME$', ['class' =&gt; 'form-control']) !!}&#10;&lt;/div&gt;" description="Password form field" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="textareafield" value="&lt;!--- $VALUE$ Field ---&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {!! Form::label('$NAME$', '$VALUE$:') !!}&#10;    {!! Form::textarea('$NAME$', null, ['class' =&gt; 'form-control']) !!}&#10;&lt;/div&gt;" description="Text area form field" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="hiddenfield" value="{!! Form::hidden('$NAME$', $VALUE$) !!}" description="Hidden form field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="submitfield" value="&lt;!--- $VALUE$ Field ---&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {!! Form::submit('$NAME$', ['class' =&gt; 'btn btn-primary']) !!}&#10;&lt;/div&gt;" description="Submit form field" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="req" value="'required' =&gt; 'required'" description="Require field" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
